@@ -3,14 +3,13 @@ import Link from 'next/link';
 import Hero from '@/components/Hero';
 import InfoBoxes from '@/components/InfoBoxes';
 import Footer from '@/components/Footer';
-
+import RecentProperties from '@/components/RecentProperties';
 function HomePage() {
   return (
     <div>
       <Hero />
       <InfoBoxes />
-      <h1 className="text-3xl">Welcome</h1>
-      <Link href="/properties">Show Properties</Link>
+      <RecentProperties />
       <Footer />
     </div>
   );
