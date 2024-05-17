@@ -4,7 +4,8 @@ import Hero from '@/components/Hero';
 import InfoBoxes from '@/components/InfoBoxes';
 import Footer from '@/components/Footer';
 import RecentProperties from '@/components/RecentProperties';
-function HomePage() {
+
+const HomePage = () => {
   return (
     <div>
       <Hero />
@@ -13,6 +14,6 @@ function HomePage() {
       <Footer />
     </div>
   );
-}
+};
 
 export default HomePage;
