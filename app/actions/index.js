@@ -7,7 +7,7 @@ export async function fetchProperties() {
     if (!apiDomain) {
       return [];
     }
-    const res = await fetch(`${apiDomain}/properties`);
+    const res = await fetch(`${apiDomain}/properties`, { cache: 'no-store' });
     if (!res.ok) {
       throw new Error('Failed to fetch data');
     }
@@ -26,6 +26,40 @@ export async function fetchProperty(id) {
     const res = await fetch(`${apiDomain}/properties/${id}`);
     if (!res.ok) {
       throw new Error('Failed to fetch data for given id ', id);
+    }
+    return res.json();
+  } catch (error) {
+    console.log(error);
+    return null;
+  }
+}
+
+export async function fetchPropertiesByUser(id) {
+  try {
+    if (!apiDomain) {
+      return null;
+    }
+    const res = await fetch(`${apiDomain}/properties/user/${id}`);
+    if (!res.ok) {
+      throw new Error('Failed to fetch data for given id ', id);
+    }
+    return res.json();
+  } catch (error) {
+    console.log(error);
+    return null;
+  }
+}
+
+export async function deletePropertiesById(propertyId) {
+  try {
+    if (!apiDomain) {
+      return null;
+    }
+    const res = await fetch(`${apiDomain}/properties/${propertyId}`, {
+      method: 'DELETE',
+    });
+    if (!res.ok) {
+      throw new Error('Failed to fetch data for given id ', propertyId);
     }
     return res.json();
   } catch (error) {

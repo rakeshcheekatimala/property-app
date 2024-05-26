@@ -1,0 +1,55 @@
+[{
+  "_id": {
+    "$oid": "665097cc31c54d45d99012e4"
+  },
+  "owner": {
+    "$oid": "664b419a0484a1e8bbad960a"
+  },
+  "name": "RC Property",
+  "type": "Apartment",
+  "description": "This is RC Property",
+  "location": {
+    "street": "Fernvale",
+    "city": "Singapore",
+    "state": "Singapore",
+    "zipcode": "797417"
+  },
+  "beds": 3,
+  "baths": 2,
+  "square_feet": 1800,
+  "amenities": [
+    "Wifi",
+    "Free Parking",
+    "Swimming Pool",
+    "24/7 Security",
+    "Wheelchair Accessible",
+    "Elevator Access",
+    "Air Conditioning",
+    "Smart TV",
+    "Coffee Maker"
+  ],
+  "rates": {
+    "nightly": null,
+    "weekly": 8000,
+    "monthly": 2000
+  },
+  "seller_info": {
+    "name": null,
+    "email": "rcjo@test.com",
+    "phone": "7878-90909-6565"
+  },
+  "images": [
+    "https://res.cloudinary.com/dffstxcmj/image/upload/v1716557764/propertyapp/s9olqsijurokomwogopb.jpg",
+    "https://res.cloudinary.com/dffstxcmj/image/upload/v1716557767/propertyapp/repsd5zt586fuqsz8qbe.jpg",
+    "https://res.cloudinary.com/dffstxcmj/image/upload/v1716557769/propertyapp/igavlpbm5ks5rnw3zndd.jpg",
+    "https://res.cloudinary.com/dffstxcmj/image/upload/v1716557772/propertyapp/urqmqra07rgsnketmydw.jpg"
+  ],
+  "is_featured": false,
+  "createdAt": {
+    "$date": "2024-05-24T13:36:12.743Z"
+  },
+  "updatedAt": {
+    "$date": "2024-05-24T13:36:12.743Z"
+  },
+  "__v": 0
+}]

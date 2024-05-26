@@ -40,7 +40,7 @@ export const authOptions = {
     // modify the session
     async session({ session }) {
       // 1. Get user from DB
-      const user = User.findOne({
+      const user = await User.findOne({
         email: session.user.email,
       });
       // 2. Assign userId to the session.
